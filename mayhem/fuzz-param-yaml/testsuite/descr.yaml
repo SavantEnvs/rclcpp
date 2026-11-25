@@ -1,0 +1,6 @@
+/a/b/c:
+  ros__parameters:
+    i: !!int 3
+    f: !!float 1.5
+    str: !!str 10
+    empty: []

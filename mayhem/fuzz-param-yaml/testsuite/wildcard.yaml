@@ -1,0 +1,14 @@
+/**:
+  ros__parameters:
+    use_sim_time: false
+    qos_overrides:
+      /chatter:
+        publisher:
+          depth: 10
+          reliability: reliable
+/*/node:
+  ros__parameters:
+    x: 1
+node:
+  ros__parameters:
+    y: "z"

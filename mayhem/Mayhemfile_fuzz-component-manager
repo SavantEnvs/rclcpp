@@ -1,0 +1,13 @@
+project: savantenvs/rclcpp
+target: fuzz-component-manager
+
+cmds:
+  - cmd: /mayhem/fuzz_component_manager
+    libfuzzer: true
+    timeout: 5
+    env:
+      ROS_AUTOMATIC_DISCOVERY_RANGE: "OFF"
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-component-manager/testsuite

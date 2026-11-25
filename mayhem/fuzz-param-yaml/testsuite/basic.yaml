@@ -1,0 +1,13 @@
+/ns/node:
+  ros__parameters:
+    a: 5
+    s: "hello"
+    d: 0.25
+    b: true
+    arr: [1, 2, 3]
+    darr: [1.0, 2.5]
+    sarr: ["x", "y"]
+    barr: [true, false]
+    nested:
+      deeper:
+        v: 7
